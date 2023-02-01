@@ -1,6 +1,9 @@
 /****************************************************************************************************************************
                                                     Body
 ******************************************************************************************************************************/
+*{
+    scroll-behavior: smooth;
+}
 body{
     background-color: #1E1E1E ;
     min-height: 100vh;
@@ -21,9 +24,11 @@ nav.navbar.navbar-expand-lg.navbar-light a {
 }
 
 div#navbarNav {
+    background-color: #e02b1a;
+    z-index: 1;
+    text-align: center;
     justify-content: space-evenly;
 }
-
 /****************************************************************************************************************************
                                                     Card
 ******************************************************************************************************************************/
@@ -31,12 +36,11 @@ main h1{
     color: white;
 }
 
-.container {
+.container-flex {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    gap: 10%;
+    justify-content: space-around;
 }
 .card {
     display: flex;
@@ -44,4 +48,103 @@ main h1{
     align-items: center;
     justify-content: center;
     background-color: gray;
+}
+.card a.btn.btn-danger {
+    width: 11rem ;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 2%;
+}
+.col-md-4.mb-3 {
+    max-width: fit-content;
+}
+
+/****************************************************************************************************************************
+                                                    Footer
+******************************************************************************************************************************/
+footer {
+    background-color: #121212;
+    min-height: 10rem;
+    color: white;
+    text-transform: UPPERCASE;
+    text-align: center;
+}
+
+footer h3{
+   position: relative;
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+footer h3::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    width: 8rem;
+    border-bottom: 5px solid red;
+}
+.flex-row li {
+    display: flex;
+    gap: 2%;
+    align-items: flex-start;
+    color: #ffffff75;
+    font-size: 0.9rem;
+}
+.flex-row img {
+    width: 35%;
+    margin-right: 10%;
+}
+.flex-row .logo img {
+    width: 10%;
+    margin-right: 2%;
+}
+
+.roo ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 11%;
+    text-align: center;
+}
+.roo {
+    text-align: center;
+    color: red;
+}
+.arrowup {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/****************************************************************************************************************************
+                                                    Modal
+******************************************************************************************************************************/
+
+
+.modal-content{
+    text-align: center;
+    background-color: #595959;
+}
+.side {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    color: white;
+}
+.side a{
+    text-decoration: none;
+    color: red;
+}
+.modal {
+    top: 13%;
+    left: 26%;
+}
+.modal-backdrop.show {
+    opacity: 0;
 }
