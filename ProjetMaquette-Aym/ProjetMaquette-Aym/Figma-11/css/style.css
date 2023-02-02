@@ -1,0 +1,166 @@
+/****************************************************************************************************************************
+                                                    Body
+******************************************************************************************************************************/
+*{
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: #1E1E1E ;
+    min-height: 100vh;
+}
+*::-webkit-scrollbar{
+    display:none;
+  }
+
+/****************************************************************************************************************************
+                                                    NavBar
+******************************************************************************************************************************/
+
+.navbar{
+    background-color:  rgb(224,43,26)  ;
+    height: 5rem;
+    padding-bottom: 0.8rem;
+    align-items: end;
+}
+nav.navbar.navbar-expand-lg.navbar-light a {
+    color: white;
+}
+
+div#navbarNav {
+    background-color: #e02b1a;
+    z-index: 1;
+    text-align: center;
+    justify-content: space-evenly;
+}
+/****************************************************************************************************************************
+                                                    Card
+******************************************************************************************************************************/
+main h1{
+    color: white;
+    margin-top: 1rem;
+}
+
+
+.container-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: gray;
+    width: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25%;
+    scroll-snap-align: start;
+    max-width: 20%;
+}
+.card a.btn.btn-danger {
+    width: 11rem ;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    gap: 2%;
+}
+.col-md-4.mb-3 {
+    max-width: fit-content;
+}
+.overflow {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+/****************************************************************************************************************************
+                                                    Footer
+******************************************************************************************************************************/
+footer {
+    background-color: #121212;
+    min-height: 10rem;
+    color: white;
+    text-transform: UPPERCASE;
+    text-align: center;
+}
+
+footer h3{
+   position: relative;
+   margin-bottom: 2rem;
+   display: inline-block;
+}
+ footer span{
+    border-bottom: #e02b1a solid;
+}
+.flex-row li {
+    display: flex;
+    gap: 2%;
+    align-items: flex-start;
+    color: #ffffff75;
+    font-size: 0.9rem;
+}
+.flex-row img {
+    width: 35%;
+    margin-right: 10%;
+}
+.flex-row .logo img {
+    width: 10%;
+    margin-right: 2%;
+}
+
+.roo ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    gap: 11%;
+    text-align: center;
+}
+.roo {
+    text-align: center;
+    color: red;
+}
+.arrowup {
+    margin-top: 5%;
+    text-align: center;
+}
+
+/****************************************************************************************************************************
+                                                    Modal
+******************************************************************************************************************************/
+
+
+.modal-content{
+    text-align: center;
+    background-color: #595959;
+}
+.side {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    color: white;
+}
+.side a{
+    text-decoration: none;
+    color: red;
+}
+.modal {
+    top: 5%;
+    left: 14%;
+}
+.modal-backdrop.show {
+    opacity: 0;
+}
