@@ -1,0 +1,61 @@
+/* PC */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .container-flex .card {
+        max-width: 50%;
+        flex-shrink: 1;
+    }
+    .slider .card {
+        max-width: 25%;
+        flex-basis: 25%;
+    }
+    .container-flex {
+        gap: 3%;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .card a.btn.btn-danger {
+        width: 8rem;
+    }
+    .card a.btn.btn-danger {
+        width: 9rem;
+    }
+    .slider .card {
+        max-width: 50%;
+    }
+}
+
+/* Mobile */
+
+@media  (min-width:451px)  and (max-width:767px) {
+.card a.btn.btn-danger {
+    width: 9rem;
+}
+.slider .card {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.container-flex .card {
+    max-width: 50%;
+}
+.container-flex .card {
+    max-width: 50%;
+    flex-shrink: 1;
+}
+.container-flex{
+    gap: 2%;
+}
+}
+
+@media (min-width:280px) and (max-width:450px){
+    .slider .card {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+    .container-flex .card{
+        
+    }
+}
