@@ -1,0 +1,574 @@
+*{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+   /* outline: solid red;   */
+}
+/*-----------------------------formulaire identification.html-------------------------*/
+body ,main{
+    background:#595959;
+    color: white;
+    height: 100vh;
+}
+div h2{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    font-size: 20px;
+}
+.identification{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.mediaIdentification1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 320px;
+    height: 40px;
+     margin: 10px 10px; 
+    border-radius: 10px;
+    background-color: #254AA5;
+    color:wheat ;
+}
+.mediaIdentification1 i{
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+.mediaIdentification1 p{
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+.mediaIdentification2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 320px;
+    height: 40px;
+     margin: 10px 10px; 
+    border-radius: 10px;
+    background-color: black;
+    color:wheat ;
+
+}
+.mediaIdentification2 i{
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+.mediaIdentification2 p{
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+.mediaIdentification3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 320px;
+    height: 40px;
+    border: 2px solid;
+     margin: 10px 10px; 
+    border-radius: 10px;
+    color:wheat ;
+}
+.mediaIdentification3 i{
+    padding-top: 10px;
+    padding-left: 20px;
+    text-align: center;
+}
+.mediaIdentification3 p{
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+.mediaIdentification4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 10px;
+
+}
+.phrase {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.red{
+    color: red;
+}
+ input{
+    width: 320px;
+    height: 40px;
+ }
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    padding-right: 30px;
+    padding-left: 50px;
+}
+
+button{
+    width: 280px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #fa4a0c;
+    color: #fff;
+}
+@media screen and (max-width: 600px ) {
+    input{
+        width: 62vw;
+    }
+}
+/*-------------------------formulaire inscription-----------------------*/
+.inscription{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.form-cat-p{
+    display: flex;
+    flex-direction: column;
+    
+}
+.phrase2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.texte{
+    text-align: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 600px ) {
+    input {
+        width: 62vw;
+    }
+}
+/*-------------------------formulaire Adresselivraison-------------------------*/
+select{
+    width: 320px;
+    height: 40px;
+    border-radius: 4px;
+}
+.Adresselivraison{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.size{
+    width: 15px;
+}
+.message{
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+label{
+    display: flex;
+    justify-content: center;
+}
+
+/*--------------------------formulaire paiement----------------------*/
+.paiement{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+input reference{
+      width: 320px;
+      height: 40px;
+}
+.choice{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+}
+.suppr{
+    width: 20px;
+    padding-bottom: 70px;
+}
+/*-------------------page compte.html------------------------*/
+.entête{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+
+}
+.entête h2:hover::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 4.8rem;
+    width: 85px;
+    border-bottom: 10px solid red
+}
+
+.titleInfo{
+    text-align: left;
+    margin-left: 200px;
+    border-bottom:  2px solid white;
+}
+.Container-all-information{
+    width:  100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-information{
+    width: 30%;
+}
+.text-description{
+    color: white;
+}
+.avis-général{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.notification{
+    width: 50%;
+}
+.soutientotal{
+    width: 50%;
+}
+.size-avis{
+    font-size: 12px;
+    color: white;
+}
+.soutenir{
+    width: 280px;
+    height: 40px;
+    color: white;
+    background-color:#fa4a0c;
+    padding-top: 6px;
+    padding-left: 50px;
+}
+.parent-avis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-information .container-img img {
+    width: 80%;
+}
+
+/* MD Mobile*/
+@media screen and (max-width: 600px ) {
+    .avis-général{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .soutenir{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Container-all-information{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-information {
+        display: contents;
+    }
+
+    .container-img {
+        display: flex;
+        justify-content: center;
+    }
+    .notification{
+        width: 100%;
+    }
+    .soutientotal{
+        width: 100%;
+    }
+    .entête{
+        flex-direction: column;
+    }
+    margin-left{
+        margin-top: 30px;
+    }
+
+
+}
+/*--------------------------page paramétres.html---------------------*/
+.parent-user-top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.user-top{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.user-pic {
+    margin-top: 10px;
+}
+h1{
+    margin-top: 15px;
+}
+.member-u{
+    padding-bottom: 20px;
+}
+
+.infosuser{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.infosuser h1{
+    font-size: 15PX;
+    width: 30%;
+    text-align: center;
+}
+.infosuser i{
+    margin-top: 20px;
+}
+@media only screen and (max-width:600px) {
+    .user-top{
+        width: 100% !important;
+    }
+    .positionuser h1{
+        font-size: 1.5rem;
+    }
+    .fas{
+        font-size: 4rem;
+    }
+}
+/*---------------------page commande.html-------------------------*/
+.parent-user-top{
+    display: flex;
+    justify-content:flex-start;
+}
+.user-top{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.user-pic {
+    margin-top: 10px;
+}
+command h1{
+    margin-top: 15px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+.member-u{
+    padding-bottom: 20px;
+}
+.historic{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.command {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+hr{ 
+    margin: 0 auto;
+    background-color: #ffff;
+}
+.positionuser{
+    padding-left: 10px;
+}
+
+
+/*--------------------------------------page panier-vide.html---------------------------*/
+.infos-panier-vide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.panier-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panier-pic img{
+    width: 50%;
+}
+.comment-panier{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button2{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.panier{
+    width: 20%;
+    font-size: 20px;
+    margin-top: 15px;
+}
+/*------------------------------page enregistrement-------------------------------*/
+.infos-enregistrement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.enregistrement-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comment-enregistrement{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: center;
+}
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+button{
+    background-color:  red;
+    color: white;
+}
+.comment-enregistrement h2{
+    padding-top: 5px;
+}
+
+@media only screen and (max-width: 720px) {
+    .enregistrement-pic img {
+        width: 100%;
+    }
+}
+/*---------------------------footer--------------------------*/
+.parent-infos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    background-color: black;
+}
+.infos-adresse{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    align-items:flex-start;
+    
+}
+.infos{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10px;
+    gap: 10px;
+}
+h2{
+    font-size: 30px;
+    margin: 15px 10px ;
+}
+.infos-application{
+       width:30%
+}
+
+.aplli{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+.aplli img{
+    width: 52%;
+
+}
+/* .payement{
+    margin-left: 50px
+} */
+
+.modal-payment{
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+}
+.infos-media{
+    width: 30%;
+    margin-top: 35px;
+    color:orangered;
+    gap: 30px;
+}
+.media{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+.return{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+} 
+
+p {
+     margin-top: 0; 
+     margin-bottom: 0 ; 
+}
+input#exampleInputEmail1 , .form-group input{
+    width: 34%;
+    
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+    .parent-infos{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        background-color: black;
+    }
+    .infos-adresse{
+        width: 80%;
+    }
+    .infos-application{
+        width: 80%;
+    }
+    .infos-media{
+        width: 60%;
+        margin-top: 10px;
+    }
+}

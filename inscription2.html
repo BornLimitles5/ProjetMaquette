@@ -16,7 +16,7 @@
     <main class="text-center">
         <div><h2>CREER VOTRE COMPTE</h2></div>
         <div class="container text-center">
-          <form>
+          <form method="post">
               <div class="phrase">
                       <p>Vous avez déjà un compte?</p>
                       <p class="red">identifiez-vous ici.</p>
@@ -24,26 +24,27 @@
            
                 </div>
               <div class="form-group text-center">
-                <input type="Nom" class="form-control" id="exampleInputnom" aria-describedby="nomHelp" placeholder="nom">
+                <input type="Nom" class="form-control" id="exampleInputnom" aria-describedby="nomHelp" placeholder="nom"  required 
+                pattern="[A-Za-z]{2,10}"> 
               </div>
               <div class="form-group">
                 <label for=""></label>
-                <input  type="Prenom" class="form-control" id="exampleInputprenom" placeholder="Prenom">
+                <input  type="Prenom" class="form-control" id="exampleInputprenom" placeholder="Prenom"  pattern="[A-Za-z]{2,10}">
               </div>
             </div>
             <div class="form-group text-center">
-              <input type="Numéro de téléphone" class="form-control" id="exampleInputnuméro de téléphone" aria-describedby="Help" placeholder="Numéro de téléphone">
+              <input type="Numéro de téléphone" class="form-control" id="exampleInputnuméro de téléphone" aria-describedby="Help" placeholder="Numéro de téléphone" required pattern="[0-9]{8,8}">
             </div>
             <div class="form-group">
               <label for="mail"></label>
-              <input  type="mail" class="form-control" id="exampleInputmail" placeholder="mail">
+              <input  type="mail" class="form-control" id="exampleInputmail" placeholder="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
             </div>
             <div class="form-group text-center">
-                <input type="code postal" class="form-control" id="exampleInputcodepostal" aria-describedby="Help" placeholder="code postal">
+                <input type="code postal" class="form-control" id="exampleInputcodepostal" aria-describedby="Help" placeholder="code postal" required pattern="[0-9]{5,5}" >
             </div>
               <div class="form-group">
                 <label for="Adresse"></label>
-                <input  type="adresse" class="form-control" id="exampleInputadresse" placeholder="Adresse">
+                <input  type="adresse" class="form-control" id="exampleInputadresse" placeholder="Adresse" required  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
             </div>
             <div>
                 <p class="texte">
