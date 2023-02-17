@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Adresse.html</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="../index.html">Luxury Kitchen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Poêles <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Verres</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Accessoires</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Couverts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Assiettes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link">Moules et plaques</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><li><i class="fas fa-briefcase"></i></li></a>
+                </li>
+                <li class="nav-item">
+                <!-- Déclencheur Modal-->
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#exampleModal">
+                <li>
+                    <i class="fa-solid fa-user"></i>
+                </li>
+                </a>
+                <!-- Sympa non ?-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> <li><i class="fa-solid fa-bars"></i></li></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="btn btn-danger btn-sm">identifiez-vous</button>
+      </div>
+      <div class="modal-row">
+        
+        <p>Nouveau client? </p> <a href="#">Cliquez Ici</a>
+      </div>
+    </div>
+  </div>
+    </div>
+    <!-- End Modal-->
+    <main>
+        <section>
+            <form action="paiement.html" method="get">
+                <fieldset class="Adresselivraison">
+                    <div id="form-contain">
+                         <div class="list-derou">
+                            <label class="center1" for="Indiquez votre adresse de livraison">Indiquez votre adresse de livraison</label>
+                        </div>
+                        <div>
+                            <select class="custom-select">
+                                <option selected>Pays</option>
+                                <option value="1">France</option>
+                                <option value="2">Canada</option>
+                                <option value="3">Espagne</option>
+                            </select>
+                        </div>
+                            <div>
+                                <label class="center2 " for="nom complet">Nom complet</label>
+                                <div>
+                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Esther Howard" required pattern="[a-zA-Z ]+{3,20}">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="center3" for="Numéro de téléphone">Numéro de téléphone</label>
+                                <div>
+                                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="00 00 00 00 00"  required pattern="[0-9]{10,13}">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="center4" for="Adresse">Adresse</label>
+                                <div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="6391 Elgin St. Celina, Delaware 10299"  required pattern="[a-zA-Z0-9]+{5,40} ">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="center4" for="code postal">code postal<label>
+                                </div>
+                                <div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="00000"  required pattern="[0-9]{5,5}">
+                                </div>
+                            <div>
+                                <label class="center4" for="Ville">Ville</label>
+                                <div>
+                                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Los Angeles"  required pattern="[a-zA-Z0-9]+{5,40} ">
+                                </div>
+                            </div>
+                            <div class="box">
+                                <input class="size" type="checkbox" name="">
+                                <p class="message">Faire de cette adresse mon adresse par défaut</p>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+              </fieldset>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <h3>
+                  contact informations
+                </h3>
+                <div class="flex-row">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <p>3891 Ranchview Dr. Richardson, California 62639 <br> USA</p> </li>
+                    <li>
+                      <i class="fa-solid fa-phone"></i>
+                      <p>(603) 555-0123</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-envelope"></i>
+                      <p>georgia.young@example.com</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>
+                 Découvrez l'application
+                </h3>
+                <div class="flex-row">
+                  <img src="../img/google-play-badge-logo-svgrepo-com.svg" alt="">
+                  <img src="../img/download-on-the-app-store-apple-logo-svgrepo-com.svg" alt="">
+                </div>
+                <div class="flex-row text-center">
+                  <h4 class="ctr">
+                    Paiement sécurisé
+                  </h4>
+                  <div class="flex-row logo">
+                    <img src="../img/visa-logo-svgrepo-com.svg" alt="">
+                    <img src="../img/mastercard-svgrepo-com.svg" alt="">
+                    <img src="../img/paypal-svgrepo-com.svg" alt="">
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">
+                <h3>
+                  Rejoingnez-Nous
+                </h3>
+                <div class="roo">
+                  <ul>
+                    <li>
+                      <i class="fa-brands fa-facebook fa-2xl"></i>
+                    <li>
+                      <i class="fa-brands fa-twitter fa-2xl"></i>
+                    </li>
+                    <li>
+                      <i class="fa-brands fa-instagram fa-2xl"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrowup">
+                   <i class="fa-solid fa-circle-arrow-up fa-2xl"></i>
+                  </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    
+</body>
+</html>

@@ -1,0 +1,331 @@
+/************************************************************************************************************************************
+                                                    NavBar                                    
+************************************************************************************************************************************/
+@media (min-width:660px) and (max-width:767px) {
+    
+}
+
+/************************************************************************************************************************************
+                                                    Index                                    
+************************************************************************************************************************************/
+/* PC */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .container-flex .card {
+        max-width: 50%;
+        flex-shrink: 1;
+    }
+    .slider .card {
+        max-width: 25%;
+        flex-basis: 25%;
+    }
+    .container-flex {
+        gap: 3%;
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .card a.btn.btn-danger {
+        width: 8rem;
+    }
+    .card a.btn.btn-danger {
+        width: 9rem;
+    }
+    .slider .card {
+        max-width: 50%;
+    }
+}
+
+/* Mobile */
+
+@media  (min-width:660px)  and (max-width:767px) {
+.card a.btn.btn-danger {
+    width: 9rem;
+}
+.slider .card {
+    max-width: 50%;
+    flex-basis: 50%;
+}
+.container-flex .card {
+    max-width: 50%;
+}
+.container-flex .card {
+    max-width: 50%;
+    flex-shrink: 1;
+}
+.container-flex{
+    gap: 2%;
+}
+}
+
+@media (min-width:280px) and (max-width:659px){
+    .slider .card {
+        max-width: 100%;
+        flex-basis: 100%;
+      }
+      .container-flex .card {
+        flex-basis: 80%;
+        max-width: 80%;
+        width: 60% !important;
+        margin-bottom: 5%;
+        font-size: x-large;
+    }
+    .container-flex {
+        gap: 2%;
+        flex-wrap: wrap;
+    }
+    
+}
+/************************************************************************************************************************************
+                                                    Popup                                    
+************************************************************************************************************************************/
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .i img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    .modal-content.popup {
+        width: 65vw;
+        height: 40vh;
+    }
+    .popup img {
+        width: 18vw;
+        border-radius: 15px;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .popup img {
+        width: 20vw;
+        border-radius: 15px;
+    }
+    .modal-content.popup {
+        width: 85vw;
+        height: 45vw;
+        padding-right: 10%;
+    }
+    .d-flex {
+        gap: 2%;
+    }
+    .i img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    
+}
+/* Mobile */
+
+@media  (min-width:660px)  and (max-width:767px) {
+    .i img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    .d-flex {
+        gap: 2%;
+    }
+    .modal-content.popup {
+        width: 85vw;
+        height: 45vw;
+        padding-right: 10%;
+    }
+    .popup img {
+        width: 20vw;
+        border-radius: 15px;
+    }
+    .zorg {
+        font-size: 1rem;
+    }
+}
+@media (min-width:540px) and (max-width:659px){
+    .zorg {
+        font-size: 1rem;
+    }
+    .popup img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    .modal-content.popup {
+        width: 100vw;
+        height: 55vw;
+    }
+    .popup .modal-footer {
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .i img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    button.btn.btn-danger {
+        width: 44%;
+        border-radius: 1rem;
+    }
+}
+@media (min-width:280px) and  (max-width:539px){
+    .zorg {
+        font-size: 1.5rem;
+        gap: 20%;
+        flex-wrap: wrap;
+    }
+    .popup  {
+        top: 40%;
+    }
+    .popup img {
+        width: 30vw;
+        border-radius: 15px;
+    }
+    .modal-content.popup {
+        width: 100vw;
+    }
+    .modal-dialog.popup {
+        right: 0;
+    }
+    .popup .modal-footer {
+        width: 84%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .i img {
+        width: 90vw;
+        border-radius: 15px;
+    }
+    button.btn.btn-danger {
+        width: 44%;
+        border-radius: 1rem;
+    }
+    .ti {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2%;
+    }
+    .popup img {
+        width: 25vw;
+        border-radius: 15px;
+        height: 10vh;
+    }
+    .h2, h2 {
+    font-size: 1rem;
+    }
+    button.btn.btn-warning {
+        width: 10rem;
+        background-color: black;
+        border: black;
+        color: white;
+        border-radius: 30px;
+        text-transform: uppercase;
+        font-size: 9px;
+    }
+    .fifty {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 15%;
+        margin-top: 3%;
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/************************************************************************************************************************************
+                                                    Panier2                                    
+************************************************************************************************************************************/
+
+@media (min-width:280px) and  (max-width:539px){
+    .ga {
+        
+        flex-direction: column;
+        gap: 25%;
+        align-items: center;
+    }
+    .flex-row img {
+        width: 5rem;
+        margin-right: 10%;
+    }
+    .h2, h2 {
+        font-size: 1rem !important;
+    }
+    .ligne.d-flex.flex-row.justify-content-between.justify-content\:.space-between\; {
+        gap: 32%;
+        display: flex;
+    }
+        
+}
+@media (min-width:540px) and (max-width:659px) {
+    .ga {
+        
+        flex-direction: column;
+        gap: 25%;
+        align-items: center;
+    }
+
+    .flex-row img {
+        width: 5rem;
+        margin-right: 10%;
+    }
+
+    .h2,
+    h2 {
+        font-size: 1rem !important;
+    }
+
+    .ligne.d-flex.flex-row.justify-content-between.justify-content\:.space-between\; {
+        gap: 32%;
+        display: flex;
+    }
+
+}
+
+/************************************************************************************************************************************
+                                                    Panier2                                    
+************************************************************************************************************************************/
+@media (min-width:280px) and (max-width:539px) {
+    .btn.btn-secondary.btn-long {
+        width: 50%;
+    }
+    .bg-image img {
+        width: 50%;
+    }
+    footer .flex-row img {
+        width: 35%;
+        margin-right: 10%;
+    }
+    .btn-primary{
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .show>.btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+}
+@media (min-width:540px) and (max-width:659px) {
+   
+    .btn-primary {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+    
+    .btn-primary:not(:disabled):not(.disabled).active,
+    .btn-primary:not(:disabled):not(.disabled):active,
+    .show>.btn-primary.dropdown-toggle {
+        color: #fff;
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+}
+
